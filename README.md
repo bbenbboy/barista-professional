@@ -19,7 +19,7 @@
 Users should be able to:
 
 - See the motion of the website on each component
-- Able the hover each course image
+- Able to hover each course image
 
 ### Screenshot
 
