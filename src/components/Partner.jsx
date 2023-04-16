@@ -9,22 +9,22 @@ const Partner = () => {
         <img
           src={sponsor1}
           alt="sponsor1"
-          className={`${styles.sponsorImg} h-[62px]`}
+          className={`${styles.sponsorImg} sm:h-[62px] h-[30px]`}
         />
         <img
           src={sponsor2}
           alt="sponsor1"
-          className={`${styles.sponsorImg} h-[89px]`}
+          className={`${styles.sponsorImg} sm:h-[89px] h-[50px]`}
         />
         <img
           src={sponsor3}
           alt="sponsor1"
-          className={`${styles.sponsorImg} h-[86px]`}
+          className={`${styles.sponsorImg} sm:h-[86px] h-[50px]`}
         />
         <img
           src={sponsor4}
           alt="sponsor1"
-          className={`${styles.sponsorImg} h-[49px]`}
+          className={`${styles.sponsorImg} sm:h-[49px] h-[29px]`}
         />
       </div>
     </section>
