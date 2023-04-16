@@ -26,24 +26,20 @@ const ListCourses = () => {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
-            className="flex justify-between flex-col sm:flex-row h-fit mb-[40px] corseCard gap-[40px] max-w-full overflow-hidden"
+            className="flex justify-between flex-col sm:flex-row h-fit mb-[40px] corseCard gap-[40px] max-w-[400px] sm:max-w-full overflow-hidden"
           >
-            <div className="w-auto h-full">
+            <div className="w-auto h-full ">
               <img
                 src={course1}
                 alt="basic-barista"
-                className="rounded object-cover h-[300px]"
+                className="rounded object-cover h-[300px] w-fit"
               />
             </div>
-            <div className="flex flex-col w-[550px] xl:w-[800px]">
-              <h4
-                className={`${styles.supHead} max-w-full overflow-hidden sm:w-full`}
-              >
+            <div className="flex flex-col w-[350px] sm:w-full max-w-[400px] sm:max-w-full xl:w-[850px]  ">
+              <h4 className={`${styles.supHead}  overflow-hidden `}>
                 Basic Barista
               </h4>
-              <p
-                className={`${styles.paragraph} w-[400px] max-w-full sm:w-full`}
-              >
+              <p className={`${styles.paragraph}  sm:w-full`}>
                 Our barista academy offers a comprehensive coffee-making program
                 that covers everything from the basics of coffee brewing to the
                 intricacies of latte art. Our program is designed to provide
@@ -61,13 +57,13 @@ const ListCourses = () => {
                 feedback to help them hone their skills.
               </p>
               <br />
-              <p className={styles.paragraph}>
+              <p className={`${styles.paragraph} w-[350px]`}>
                 2 Days Program /{" "}
                 <span className="font-bold text-[33px]">$229</span>
               </p>
               <br />
-              <Link to="/contact">
-                <button className="rounded-md bg-white px-[20px] py-[10px] text-orange cursor-pointer w-[200px] h-fit border ease-in duration-100 button">
+              <Link to="/contact" className="max-w-[350px]">
+                <button className="rounded-md bg-white px-[20px] py-[10px] text-orange cursor-pointer w-[200px] h-fit border ease-in duration-100 button ">
                   Contact
                 </button>
               </Link>
@@ -86,11 +82,9 @@ const ListCourses = () => {
                 className="rounded object-cover h-[300px] w-[250px] "
               />
             </div>
-            <div className="flex flex-col w-[550px] xl:w-[800px]">
-              <h4 className={`${styles.supHead} max-w-full`}>Latte Art</h4>
-              <p
-                className={`${styles.paragraph} w-[400px] max-w-full sm:w-full`}
-              >
+            <div className="flex flex-col w-[350px] sm:w-full max-w-[400px] sm:max-w-full xl:w-[850px]  ">
+              <h4 className={`${styles.supHead} `}>Latte Art</h4>
+              <p className={`${styles.paragraph} `}>
                 Our latte art course is led by experienced baristas who are
                 passionate about the art and craft of coffee-making. They will
                 guide students through the process of creating latte art, from
@@ -108,12 +102,12 @@ const ListCourses = () => {
                 the skills needed to create stunning designs in their lattes.
               </p>
               <br />
-              <p className={styles.paragraph}>
+              <p className={`${styles.paragraph} w-[350px] max-w-[400px]`}>
                 1 Day Program /{" "}
                 <span className="font-bold text-[33px]">$129</span>
               </p>
               <br />
-              <Link to="/contact">
+              <Link to="/contact" className="w-[350px] max-w-[400px]">
                 <button className="rounded-md bg-white px-[20px] py-[10px] text-orange cursor-pointer w-[200px] h-fit border ease-in duration-100 button">
                   Contact
                 </button>
@@ -133,11 +127,9 @@ const ListCourses = () => {
                 className="rounded object-cover h-[300px] w-[250px]"
               />
             </div>
-            <div className="flex flex-col w-[550px] xl:w-[800px]">
-              <h4 className={`${styles.supHead} max-w-full`}>Coffee Brewing</h4>
-              <p
-                className={`${styles.paragraph} w-[400px] max-w-full sm:w-full`}
-              >
+            <div className="flex flex-col w-[350px] sm:w-full max-w-[400px] sm:max-w-full xl:w-[850px]  ">
+              <h4 className={`${styles.supHead} `}>Coffee Brewing</h4>
+              <p className={`${styles.paragraph}`}>
                 Our brewing course is led by experienced instructors who are
                 passionate about the science and art of brewing coffee. They
                 will guide students through the process of brewing coffee, from
@@ -156,12 +148,12 @@ const ListCourses = () => {
                 the perfect cup of coffee every time.
               </p>
               <br />
-              <p className={styles.paragraph}>
+              <p className={`${styles.paragraph} w-[350px] max-w-[400px]`}>
                 1 Days Program /{" "}
                 <span className="font-bold text-[33px]">$179</span>
               </p>
               <br />
-              <Link to="/contact">
+              <Link to="/contact" className="w-[350px] max-w-[400px]">
                 <button className="rounded-md bg-white px-[20px] py-[10px] text-orange cursor-pointer w-[200px] h-fit border ease-in duration-100 button">
                   Contact
                 </button>
@@ -181,11 +173,9 @@ const ListCourses = () => {
                 className="rounded object-cover h-[300px] w-[250px]"
               />
             </div>
-            <div className="flex flex-col w-[550px] xl:w-[800px]">
-              <h4 className={`${styles.supHead} max-w-full`}>Coffee Roster</h4>
-              <p
-                className={`${styles.paragraph} w-[400px] max-w-full sm:w-full`}
-              >
+            <div className="flex flex-col w-[350px] sm:w-full max-w-[400px] sm:max-w-full xl:w-[850px]  ">
+              <h4 className={`${styles.supHead} `}>Coffee Roster</h4>
+              <p className={`${styles.paragraph}`}>
                 Our coffee roasting course is designed to teach students the art
                 and science of coffee roasting. Led by experienced roasters,
                 this hands-on course covers everything from green coffee
@@ -200,12 +190,12 @@ const ListCourses = () => {
                 for flavor and quality.
               </p>
               <br />
-              <p className={styles.paragraph}>
+              <p className={`${styles.paragraph} w-[350px] max-w-[400px]`}>
                 3 Days Program /{" "}
                 <span className="font-bold text-[33px]">$549</span>
               </p>
               <br />
-              <Link to="/contact">
+              <Link to="/contact" className="w-[350px] max-w-[400px]">
                 <button className="rounded-md bg-white px-[20px] py-[10px] text-orange cursor-pointer w-[200px] h-fit border ease-in duration-100 button">
                   Contact
                 </button>
