@@ -21,10 +21,10 @@ const Contact = () => {
       <Navbar />
 
       <section
-        className={`${styles.paddingX}  py-[20px] pt-36 md:pt-44 xl:pt-[150px]`}
+        className={`xl:px-[300px] md:px-[166px] sm:px-[50px] px-3  py-[20px] pt-36 md:pt-44 xl:pt-[150px]`}
       >
         <h2 className={`${styles.supHead} mb-[20px]`}>Contact Us</h2>
-        <div className="flex items-center justify-between w-full text-center rounded sm:flex-row h-fit bg-dimBlack">
+        <div className="flex flex-wrap items-center gap-5 pl-1 text-center rounded w-fit sm:justify-between sm:flex-row h-fit bg-dimBlack">
           <div className="w-[300px]  overflow-hidden ">
             <img
               src={profile}
@@ -37,33 +37,32 @@ const Contact = () => {
               onSubmit={handleSubmit}
               className="sm:pr-[50px] xl:pr-[20%] p-1"
             >
-              <div className="flex flex-col">
-                <div className="flex flex-row ">
-                  <div className="flex flex-col w-full mb-2 mr-4">
-                    <label className="mb-2 text-white text-start">
-                      First Name
-                    </label>
-                    <input
-                      type="text"
-                      className="w-auto p-1 border rounded sm:p-2"
-                      placeholder="John"
-                      required
-                      onChange={(e) => setFirstName(e.target.value)}
-                    />
-                  </div>
-                  <div className="flex flex-col w-[200px]">
-                    <label className="mb-2 text-white text-start">
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      className="w-auto p-1 border rounded sm:p-2"
-                      placeholder="Doe"
-                      required
-                      onChange={(e) => setLastName(e.target.value)}
-                    />
-                  </div>
+              <div className="flex flex-col w-[350px]">
+                <div className="flex flex-col w-full mb-2 ">
+                  <label className="mb-2 text-white text-start">
+                    First Name
+                  </label>
+                  <input
+                    type="text"
+                    className="w-auto p-1 border rounded sm:p-2"
+                    placeholder="John"
+                    required
+                    onChange={(e) => setFirstName(e.target.value)}
+                  />
                 </div>
+                <div className="flex flex-col w-full">
+                  <label className="mb-2 text-white text-start">
+                    Last Name
+                  </label>
+                  <input
+                    type="text"
+                    className="flex-1 w-auto p-1 border rounded sm:p-2"
+                    placeholder="Doe"
+                    required
+                    onChange={(e) => setLastName(e.target.value)}
+                  />
+                </div>
+
                 <label className="text-white text-start">Email</label>
                 <input
                   type="email"
