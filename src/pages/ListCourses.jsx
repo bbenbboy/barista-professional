@@ -6,6 +6,21 @@ import { Link } from "react-router-dom";
 import { course1, latteart, roasted, brew } from "../assets";
 import { motion } from "framer-motion";
 
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 100 },
+  show: { opacity: 1, y: 0, duration: 0.8 },
+};
+
 const ListCourses = () => {
   return (
     <>
@@ -14,7 +29,7 @@ const ListCourses = () => {
         id="list_Courses"
         className={`${styles.paddingX} ${styles.paddingY} py-[20px] pt-36 md:pt-44 `}
       >
-        <motion.div transition={{ delayChildren: 1 }} className="w-full">
+        <motion.div className="w-full">
           <motion.h3
             initial={{ x: 0, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -72,7 +87,7 @@ const ListCourses = () => {
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1, delay: 0.2 }}
             className="flex justify-between flex-col sm:flex-row h-fit mb-[40px] corseCard gap-[40px]"
           >
             <div className="w-auto h-full">
@@ -117,7 +132,7 @@ const ListCourses = () => {
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1, delay: 0.4 }}
             className="flex justify-between flex-col sm:flex-row h-fit mb-[40px] corseCard gap-[40px]"
           >
             <div className="w-auto h-full">
@@ -163,7 +178,7 @@ const ListCourses = () => {
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1, delay: 0.6 }}
             className="flex justify-between flex-col sm:flex-row h-fit mb-[40px] corseCard gap-[40px]"
           >
             <div className="w-auto h-full">
