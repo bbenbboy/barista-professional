@@ -24,7 +24,7 @@ const Contact = () => {
         className={`xl:px-[300px] md:px-[166px] sm:px-[50px] px-3  py-[20px] pt-36 md:pt-44 xl:pt-[150px]`}
       >
         <h2 className={`${styles.supHead} mb-[20px]`}>Contact Us</h2>
-        <div className="flex flex-wrap items-center gap-5 pl-1 text-center rounded w-fit sm:justify-between sm:flex-row h-fit bg-dimBlack">
+        <div className="flex flex-wrap items-center w-auto gap-5 pl-1 text-center rounded sm:justify-between sm:flex-row h-fit bg-dimBlack">
           <div className="w-[300px]  overflow-hidden ">
             <img
               src={profile}
