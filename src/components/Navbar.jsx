@@ -15,7 +15,7 @@ const Navbar = () => {
       transition={{ duration: 1 }}
       className={`${styles.paddingX} ${styles.paddingY} fixed z-20 bg-white w-full sm:rounded-b-[50%] rounded-b-[30%]`}
     >
-      <nav className="flex items-center justify-between max-w-full overflow-x-auto">
+      <nav className="flex items-center justify-between max-w-[100vw] overflow-x-auto">
         <div>
           <Link className="cursor-pointer" to="/">
             <img
@@ -61,25 +61,21 @@ const Navbar = () => {
               } p-6 absolute top-14 right-0 mx-2  min-w-[140px] rounded-xl sidebar`}
             >
               <ul className="flex flex-col items-center justify-center flex-1 p-4 list-none bg-white rounded-xl">
-                <li className="mb-2 ">
-                  <a
-                    href="#hero"
-                    className={`font-[500] font-anuphan cursor-pointer ${styles.navHover}`}
-                  >
-                    Home
-                  </a>
-                </li>
-                <li className="mb-2 ">
-                  <a
-                    href="#courses"
-                    className={`font-[500] font-anuphan cursor-pointer ${styles.navHover}`}
-                  >
-                    Courses
-                  </a>
-                </li>
-                <li className="mb-2 ">
+                <Link
+                  to="/"
+                  className={` mb-2 font-[500] font-anuphan cursor-pointer ${styles.navHover}`}
+                >
+                  Home
+                </Link>
+                <Link
+                  to="/courses"
+                  className={` mb-2 relative font-[500] font-anuphan cursor-pointer ${styles.navHover}`}
+                >
+                  Courses
+                </Link>
+                <li className="">
                   <Link
-                    className={`font-[500] font-anuphan cursor-pointer ${styles.navHover}`}
+                    className={`mb-2 font-[500] font-anuphan cursor-pointer ${styles.navHover}`}
                     to="/contact"
                   >
                     Contact
