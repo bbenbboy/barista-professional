@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@300;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+navbar:hover {
+  color: orange;
+}
+.cardHover:hover img {
+  filter: grayscale(0);
+}
+
+.cardHover:hover > .absolute {
+  z-index: 1;
+  opacity: 1;
+}
+.button:hover {
+  background-color: white;
+  border: 1px solid #fc7614;
+  color: #fc7614;
+}
+
+.corseCard:hover button {
+  border-radius: 8px;
+  background-color: #fc7614;
+  color: white;
+
+  transition: box-shadow 0.2s ease-in-out;
+}
