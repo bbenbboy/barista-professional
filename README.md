@@ -1,62 +1,24 @@
-## Table of contents
+## Barista Academy Portfolio Project With React
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+This project is created to challenge the academy design, especially in the Coffee industry. The design was made to look aesthetic design and modern which challenge the Student to explore the website.
 
-## Overview
+## Technologies Used
 
-### The challenge
-
-Users should be able to:
-
-- See the motion of the website on each component
-- Able to hover each course image
-
-### Screenshot
-
-![](/img/desktop.png)
-
-### Links
-
-- Solution URL: [Github](https://github.com/bbenbboy/Mini-Calculator-Project.git)
-- Live Site URL: [Live Site URL](https://barista-racp.netlify.app/)
-
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
 - React
-- TailwindCSS
+- Tailwindcss
+- Framer Motion
 
-### What I learned
+## Features
 
-None
-
-### Continued development
-
-None
-
-### Useful resources
-
-None
-
-## Author
-
-- Website - [My Resume](https://rcp-portfolio.vercel.app/)
+- Clean and modern design
+- Responsive layout for mobile, tablet, and desktop screens
+- Able to navigate to each page Send a contact back form for the user who is interested in the course
 
 ## Acknowledgments
 
-None
+- TailwindCss
+- Framer Motion
+
+## Final Design
+
+![product](./img/desktop.png)
