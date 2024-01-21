@@ -24,20 +24,20 @@ const Contact = () => {
         className={`xl:px-[300px] md:px-[166px] sm:px-[50px] px-3  py-[20px] pt-36 md:pt-44 xl:pt-[150px]`}
       >
         <h2 className={`${styles.supHead} mb-[20px]`}>Contact Us</h2>
-        <div className="flex flex-wrap items-center w-auto gap-5 pl-1 text-center rounded sm:pl-0 sm:justify-between sm:flex-row h-fit bg-dimBlack">
+        <div className="flex items-center w-auto gap-5 pl-1 text-center rounded sm:pl-0 sm:justify-start sm:flex-row h-fit bg-dimBlack">
           <div className="w-[300px]  overflow-hidden ">
             <img
               src={profile}
               alt=""
-              className="object-cover sm:h-[400px] sm:block hidden"
+              className="object-cover sm:h-[400px] sm:block "
             />
           </div>
           {!isSubmitted ? (
             <form
               onSubmit={handleSubmit}
-              className="sm:pr-[50px] xl:pr-[20%] p-1"
+              className="sm:pr-[50px] xl:pr-[20%] p-1 w-full"
             >
-              <div className="flex flex-col w-[350px]">
+              <div className="flex flex-col w-auto">
                 <div className="flex flex-col w-full mb-2 ">
                   <label className="mb-2 text-white text-start">
                     First Name

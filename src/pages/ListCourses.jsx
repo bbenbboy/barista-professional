@@ -6,6 +6,21 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { listCourse } from "../constants";
 
+const variants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5,
+    },
+  },
+};
+
+const stagVariants = {
+  hidden: { opacity: 0, x: 50, y: 50 },
+  show: { opacity: 1, x: 0, y: 0 },
+};
+
 const ListCourses = () => {
   return (
     <>
@@ -14,19 +29,18 @@ const ListCourses = () => {
         id="list_Courses"
         className={`${styles.paddingX} ${styles.paddingY} py-[20px] pt-36 md:pt-44 `}
       >
-        <motion.div className="w-full">
-          <motion.h3
-            initial={{ x: 0, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            className={`${styles.supHead} mb-[20px]`}
-          >
-            Our Courses
-          </motion.h3>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          animate="show"
+          className="w-full"
+        >
+          <h3 className={`${styles.supHead} mb-[20px]`}>Our Courses</h3>
           {listCourse.map((course) => (
             <motion.div
-              initial={{ y: 100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1 }}
+              variants={stagVariants}
+              initial="hidden"
+              whileInView="show"
               className="flex justify-between flex-col sm:flex-row h-fit mb-[40px] corseCard gap-[40px] max-w-[400px] sm:max-w-full overflow-hidden"
               key={course.id}
             >

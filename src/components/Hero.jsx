@@ -4,31 +4,50 @@ import { hero } from "../assets";
 import styles from "../style";
 import { motion } from "framer-motion";
 
+const variants = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const stagVariants = {
+  initial: {
+    y: 50,
+    x: 50,
+  },
+  animate: {
+    y: 0,
+    x: 0,
+    transition: {
+      duration: 0.3,
+    },
+  },
+};
+
 const Hero = () => {
   return (
     <section
-      initial="initial"
-      animate="animate"
       className={`${styles.paddingX} py-[20px] pt-36 md:pt-44 `}
       id="hero"
     >
-      <div className="flex flex-col md:flex-row items-start md:items-center justify-between sm:gap-6 gap-1 h-[300px] sm:mb-[60px] ">
-        <motion.div
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="w-[90%]"
-        >
+      <motion.div
+        className="flex flex-col md:flex-row items-start md:items-center justify-between sm:gap-6 gap-1 h-[300px] sm:mb-[60px] "
+        variants={variants}
+        initial="initial"
+        animate="animate"
+      >
+        <motion.div className="w-[90%]" variants={stagVariants}>
           <h1 className={`${styles.heading} mb-2 `}>
             The Road <br className="hidden sm:block" /> into the coffee WORLD!
           </h1>
         </motion.div>
-        <motion.div
-          initial={{ x: 50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="w-full"
-        >
+        <motion.div className="w-full" variants={stagVariants}>
           <p className={`${styles.paragraph} mb-5`}>
             Learn the art of coffee-making at our barista academy. Our courses
             provide international certification with true Italian and European
@@ -43,19 +62,17 @@ const Hero = () => {
             </button>
           </Link>
         </motion.div>
-      </div>
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1 }}
+      </motion.div>
+      <div
         className="w-full mt-[40px]  pt-[6rem] sm:pt-16 md:pt-0 "
+        variants={stagVariants}
       >
         <img
           src={hero}
           alt="hero"
           className="object-contain w-full rounded-md"
         />
-      </motion.div>
+      </div>
     </section>
   );
 };
