@@ -33,10 +33,7 @@ const Contact = () => {
             />
           </div>
           {!isSubmitted ? (
-            <form
-              onSubmit={handleSubmit}
-              className="sm:pr-[50px] xl:pr-[20%] p-1 w-full"
-            >
+            <form onSubmit={handleSubmit} className="w-full p-5 ">
               <div className="flex flex-col w-auto">
                 <div className="flex flex-col w-full mb-2 ">
                   <label className="mb-2 text-white text-start">
